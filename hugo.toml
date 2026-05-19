@@ -30,11 +30,7 @@ pagination.pagerSize = 10
 
 [params.homeInfoParams]
   Title = "일상의 소리"
-  Content = """
-![](/images/cover.jpg)
-
-그냥 개인 일상의 이런저런 기록.
-"""
+  Content = "![](/images/cover.jpg)"
 
 [[params.socialIcons]]
   name = "github"
