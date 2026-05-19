@@ -30,7 +30,11 @@ pagination.pagerSize = 10
 
 [params.homeInfoParams]
   Title = "일상의 소리"
-  Content = "종이에 펜으로 적듯, 가볍게 적고 차분히 보관하는 공간."
+  Content = """
+![](/images/cover.jpg)
+
+종이에 펜으로 적듯, 가볍게 적고 차분히 보관하는 공간.
+"""
 
 [[params.socialIcons]]
   name = "github"
