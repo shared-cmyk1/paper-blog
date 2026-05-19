@@ -33,7 +33,7 @@ pagination.pagerSize = 10
   Content = """
 ![](/images/cover.jpg)
 
-종이에 펜으로 적듯, 가볍게 적고 차분히 보관하는 공간.
+그냥 개인 일상의 이런저런 기록.
 """
 
 [[params.socialIcons]]
