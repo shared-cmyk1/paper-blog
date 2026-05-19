@@ -1,0 +1,62 @@
+baseURL = "https://shared-cmyk1.github.io/paper-blog/"
+languageCode = "ko-KR"
+defaultContentLanguage = "ko"
+title = "Paper Blog"
+theme = "PaperMod"
+
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+
+pagination.pagerSize = 10
+
+[minify]
+  disableXML = true
+
+[params]
+  env = "production"
+  description = "종이 같은 질감의 블로그."
+  author = "혜민"
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowToc = true
+  TocOpen = false
+  DateFormat = "2006.01.02"
+
+[params.homeInfoParams]
+  Title = "Paper Blog"
+  Content = "종이에 펜으로 적듯, 가볍게 적고 차분히 보관하는 공간."
+
+[[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/shared-cmyk1"
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 10
+  [[menu.main]]
+    identifier = "archive"
+    name = "Archive"
+    url = "/archives/"
+    weight = 20
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 30
+  [[menu.main]]
+    identifier = "search"
+    name = "Search"
+    url = "/search/"
+    weight = 40
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
