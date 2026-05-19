@@ -1,7 +1,7 @@
 baseURL = "https://shared-cmyk1.github.io/paper-blog/"
 languageCode = "ko-KR"
 defaultContentLanguage = "ko"
-title = "Paper Blog"
+title = "일상의 소리"
 theme = "PaperMod"
 
 enableRobotsTXT = true
@@ -17,7 +17,7 @@ pagination.pagerSize = 10
 [params]
   env = "production"
   description = "종이 같은 질감의 블로그."
-  author = "혜민"
+  author = "왕밤라떼"
   defaultTheme = "auto"
   ShowReadingTime = true
   ShowShareButtons = false
@@ -29,7 +29,7 @@ pagination.pagerSize = 10
   DateFormat = "2006.01.02"
 
 [params.homeInfoParams]
-  Title = "Paper Blog"
+  Title = "일상의 소리"
   Content = "종이에 펜으로 적듯, 가볍게 적고 차분히 보관하는 공간."
 
 [[params.socialIcons]]
