@@ -1,0 +1,22 @@
+{{- /* PaperMod head 확장 훅. 모라티오 리뷰 글에 Review/Product 구조화 데이터(JSON-LD) 주입.
+       본문은 건드리지 않으며, dict+jsonify로 유효한 JSON을 안전하게 생성한다.
+       평점(reviewRating)은 임의 값 생성을 피하기 위해 일부러 넣지 않음. */ -}}
+{{- if and .IsPage .File (in .File.Path "모라티오") }}
+<script type="application/ld+json">
+{{ dict
+  "@context" "https://schema.org"
+  "@type" "Review"
+  "itemReviewed" (dict
+    "@type" "Product"
+    "name" "센슈얼리 모라티오"
+    "category" "성인용품"
+    "brand" (dict "@type" "Brand" "name" "센슈얼리"))
+  "author" (dict "@type" "Person" "name" site.Params.author)
+  "publisher" (dict "@type" "Organization" "name" site.Title)
+  "name" .Title
+  "reviewBody" .Description
+  "datePublished" (.Date.Format "2006-01-02T15:04:05Z07:00")
+  "url" .Permalink
+  | jsonify (dict "indent" "  ") }}
+</script>
+{{- end }}
