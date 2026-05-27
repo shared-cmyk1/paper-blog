@@ -24,6 +24,8 @@ pagination.pagerSize = 10
   env = "production"
   description = "종이 같은 질감의 블로그."
   author = "왕밤라떼"
+  # 개별 글에 cover가 없을 때 og:image / twitter:image 기본값
+  images = ["images/cover.jpg"]
   defaultTheme = "auto"
   ShowReadingTime = false
   ShowShareButtons = false
